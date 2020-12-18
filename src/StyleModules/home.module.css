@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@100;400&display=swap');
+
+.background{
+    height: calc(100vh - 72px);
+    width: 100vw;
+    background-size: auto;
+    background-color:rgb(238, 238, 238);
+    
+}
+
+.title {
+    font-size: calc(2em + 2vw);
+    line-height: 1.75rem;
+    color: rgb(58, 58, 58);
+    font-weight: 500;  
+}
