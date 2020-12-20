@@ -4,7 +4,6 @@ import Nav from "react-bootstrap/Nav";
 import NavItem from "react-bootstrap/NavItem";
 import { SocialIcon } from "react-social-icons";
 import { Link } from "react-router-dom";
-import styles from "../StyleModules/nav.module.css";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
