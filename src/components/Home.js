@@ -9,6 +9,9 @@ export default function Home() {
   return (
     <main className={styles.background}>
       <div className={styles.logo} />
+      <div className={styles.titleBox}>
+        <section className={styles.title}>Welcome.</section>
+      </div>
     </main>
   );
 }

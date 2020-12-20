@@ -28,11 +28,15 @@ export default function Project() {
 
   return (
     <main className={styles.background}>
-      <section className="container mx-auto pt-36">
-        <section className="grid  sm:grid-col-1 md:grid-cols-2 gap-8 lg:grid-col-3 gap-8">
+      <div
+        className={styles.logo}
+        style={{ opacity: 0.5, position: "absolute" }}
+      ></div>
+      <section className="container mx-auto pt-36 object-contain">
+        <section className="grid  sm:grid-cols-1 md:grid-cols-2 gap-6 lg:grid-cols-3 gap-8">
           {projectData &&
             projectData.map((project, index) => (
-              <article className="relative rounded-lg shadow-xl bg-white p-16  sm: overflow-ellipsis">
+              <article className="relative rounded-lg shadow-xl bg-white p-6  ">
                 <h3 className="text-gray-800 text-3xl font-bold mb-2 ">
                   <a
                     href={project.link}
@@ -53,22 +57,11 @@ export default function Project() {
                     <strong className="font-bold">Location</strong>:{" "}
                     {project.place}
                   </span>
-
-                  <p className="my-6 text-lg text-gray-700 leading-relaxed">
+                  <br />
+                  <p className="my-6 hidden text-md text-gray-700 leading-relaxed sm:contents">
                     {project.description}
                   </p>
-
-                  <a
-                    href={project.link}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    className="text-blue-500 font-bold hover:no-underline hover:text-blue-400"
-                  >
-                    View The Project{" "}
-                    <span role="img" aria-label="right pointer">
-                      🎮{" "}
-                    </span>
-                  </a>
+                  <br />
                   <a
                     href={project.linkCode}
                     rel="noopener noreferrer"
