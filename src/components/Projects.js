@@ -36,7 +36,7 @@ export default function Project() {
         <section className="grid  sm:grid-cols-1 md:grid-cols-2 gap-6 lg:grid-cols-3 gap-8">
           {projectData &&
             projectData.map((project, index) => (
-              <article className="relative rounded-lg shadow-xl bg-white p-6  ">
+              <article className="relative rounded-lg shadow-xl bg-white p-6 opacity-85 ">
                 <h3 className="text-gray-800 text-3xl font-bold mb-2 ">
                   <a
                     href={project.link}
@@ -57,10 +57,11 @@ export default function Project() {
                     <strong className="font-bold">Location</strong>:{" "}
                     {project.place}
                   </span>
-                  <br />
-                  <p className="my-6 hidden text-md text-gray-700 leading-relaxed sm:contents">
+                  <br /> <br />
+                  <p className=" hidden text-md text-gray-700 leading-relaxed sm:contents">
                     {project.description}
                   </p>
+                  <br />
                   <br />
                   <a
                     href={project.linkCode}
