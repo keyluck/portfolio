@@ -32,13 +32,6 @@ export default function About() {
                 lifting weights and playing video games.
               </p>
             </div>
-            <div>
-              <img
-                src={img2}
-                className="relative hidden inline-block shadow-2xl  sm:contents"
-                alt="Doggo"
-              />
-            </div>
           </section>
         </section>
       </div>
