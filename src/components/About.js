@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "../StyleModules/home.module.css";
 import img from "../img/nick.jpg";
-import img2 from "../img/doggo.jpeg";
 
 export default function About() {
   return (
