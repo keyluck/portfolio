@@ -53,6 +53,24 @@
 
   .projectsInfo {
     font-size: 10px;
+    height: 100%;
+  }
+
+  .aboutPicture {
+    position: relative;
+    display: inline-block;
+    --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    border-radius: 0.5rem;
+    opacity: 0.85;
+    height: 20rem;
+    margin: 0 auto 0 auto;
+  }
+
+  .aboutText {
+    color: black;
+    line-height: 1.3;
   }
 }
 
@@ -79,6 +97,23 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.5rem;
+    padding: -20px;
+  }
+
+  .aboutPicture {
+    position: relative;
+    display: inline-block;
+    --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    border-radius: 0.5rem;
+    opacity: 0.85;
+    margin: 0 auto 0 auto;
+  }
+
+  .aboutText {
+    color: black;
+    line-height: 1.625;
   }
 }
 
@@ -87,5 +122,20 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 4rem;
+  }
+
+  .aboutPicture {
+    position: relative;
+    display: inline-block;
+    --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    border-radius: 0.5rem;
+    opacity: 0.85;
+  }
+
+  .aboutText {
+    color: black;
+    line-height: 1.625;
   }
 }

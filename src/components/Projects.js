@@ -50,7 +50,7 @@ export default function Project() {
                     </a>
                   </h3>
                   <div className={styles.projectsInfo}>
-                    <span className="pr-4">
+                    <span className="pr-4 ">
                       <strong className="font-bold">Type</strong>:{" "}
                       {project.projectType}
                     </span>
@@ -68,7 +68,7 @@ export default function Project() {
                       href={project.linkCode}
                       rel="noopener noreferrer"
                       target="_blank"
-                      className="text-blue-500 font-bold hover:no-underline hover:text-blue-400"
+                      className="text-blue-500  font-bold hover:no-underline hover:text-blue-400"
                     >
                       View The Source Code{" "}
                       <span role="img" aria-label="laptop">
