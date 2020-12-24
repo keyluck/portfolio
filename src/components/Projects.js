@@ -64,7 +64,7 @@ export default function Projects() {
         <div className={styles.selectedProjectContainer}>
           <div
             style={{
-              visibility: visible == false ? "hidden" : "visible",
+              visibility: visible === false ? "hidden" : "visible",
             }}
           >
             <article className="relative rounded-lg shadow-xl bg-white p-2 lg:p-4 opacity-85">
