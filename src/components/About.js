@@ -1,14 +1,15 @@
 import React from "react";
 import styles from "../StyleModules/home.module.css";
 import img from "../img/nick.jpg";
+import { backgroundImage } from '../lib/util';
 
 export default function About() {
+  const logoStyle = {...backgroundImage(), 'opacity': '0.5'};
+
+
   return (
     <main className={styles.background}>
-      <div
-        className={styles.logo}
-        style={{ opacity: 0.5, positon: "absolute" }}
-      ></div>
+      <div style={logoStyle} />
       <div>
         <section className="container mx-auto pt-36">
           <section className="grid  sm:grid-col-1 md:grid-cols-2 gap-8 ">

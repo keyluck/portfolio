@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import sanityClient from "../client.js";
 
 import styles from "../StyleModules/home.module.css";
-
+import { backgroundImage } from '../lib/util';
 export default function Projects() {
+  const logoStyle = {...backgroundImage(), 'opacity':'0.5'};
   const [loading, setLoading] = useState(true);
   const [projectData, setProjectData] = useState([]);
   const [selectedProject, setSelectedProject] = useState([]);
@@ -33,10 +34,7 @@ export default function Projects() {
 
   return (
     <main className={styles.background}>
-      <div
-        className={styles.logo}
-        style={{ opacity: 0.5, position: "absolute" }}
-      ></div>
+      <div style={logoStyle} />
 
       {/* Container for Drop Down menu for mobile devices*/}
       <div className={styles.dropDownMenuContainer}>
