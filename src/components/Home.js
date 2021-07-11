@@ -1,14 +1,13 @@
 import React from "react";
 import styles from "../StyleModules/home.module.css";
+import { backgroundImage } from '../lib/util';
 
-//<section className="relative flex justify-center pt-12 lg:pt-12 px-8">
-//<h1 className={styles.title}>Nick Luckey</h1>
-//</section>
 
 export default function Home() {
+  const logoStyle = backgroundImage();
   return (
     <main className={styles.background}>
-      <div className={styles.logo} />
+      <div style={logoStyle} />
       <div className={styles.titleBox}>
         <section className={styles.title}>Welcome.</section>
       </div>

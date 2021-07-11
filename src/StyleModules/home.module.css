@@ -6,16 +6,6 @@
   position: absolute;
 }
 
-.logo {
-  background-image: url(../img/img_13.jpg);
-  height: 100vh;
-  position: absolute;
-  background-size: cover;
-  /*background-position: center center;*/
-  z-index: -1;
-  width: 100vw;
-  position: fixed;
-}
 
 .titleBox {
   display: block;
