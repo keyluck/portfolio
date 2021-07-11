@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import sanityClient from "../client.js";
 
-import styles from "../StyleModules/home.module.css";
+import styles from "../styles/home.module.css";
 import { backgroundImage } from '../lib/util';
 export default function Projects() {
   const logoStyle = {...backgroundImage(), 'opacity':'0.5'};

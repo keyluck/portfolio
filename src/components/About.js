@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../StyleModules/home.module.css";
+import styles from "../styles/home.module.css";
 import img from "../img/nick.jpg";
 import { backgroundImage } from '../lib/util';
 
