@@ -5,9 +5,6 @@ import background_small from '../img/bg_480.jpg';
 export const backgroundImage = () => {
     const isMobile = window.matchMedia("(max-width: 480px)")
     const isIpad = window.matchMedia("(max-width: 770px)")
-    // console.log('isMobile', isMobile)
-    // console.log('isIpad', isIpad)
-    // console.log('logic: ' , isMobile.matches ? 'background_small' : (isIpad.matches ? 'background_med': 'background_large') );
     const bgImg = isMobile.matches ? background_small : (isIpad.matches ? background_med: background_large);
     const logoStyle = {
       backgroundImage: 'url('+ bgImg +')',
