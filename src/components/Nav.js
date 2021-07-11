@@ -5,7 +5,6 @@ import NavItem from "react-bootstrap/NavItem";
 import { SocialIcon } from "react-social-icons";
 import { Link } from "react-router-dom";
 
-import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function TestPage() {
   return (

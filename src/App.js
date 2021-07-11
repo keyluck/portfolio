@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Nav from "./components/Nav";
+import "bootstrap/dist/css/bootstrap.min.css"
 
 function App() {
   return (
