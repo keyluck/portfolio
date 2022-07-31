@@ -3,28 +3,40 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@sanity/block-content-to-react": "^2.0.7",
-    "@sanity/client": "^2.1.0",
-    "@sanity/image-url": "^0.140.19",
-    "@testing-library/jest-dom": "^5.11.6",
-    "@testing-library/react": "^11.2.2",
-    "@testing-library/user-event": "^12.6.0",
-    "bootstrap": "^4.5.3",
-    "react": "^17.0.1",
-    "react-bootstrap": "^1.4.0",
-    "react-dom": "^17.0.1",
-    "react-responsive": "^8.2.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.1",
-    "react-social-icons": "^4.1.0",
-    "web-vitals": "^1.0.1",
-    "yarn": "^1.22.10"
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/material": "^5.9.2",
+    "@sanity/block-content-to-react": "^3.0.0",
+    "@sanity/client": "^3.3.2",
+    "@sanity/image-url": "^1.0.1",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^14.3.0",
+    "@types/jest": "^28.1.6",
+    "@types/node": "^18.6.2",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "bootstrap": "^5.2.0",
+    "concurrently": "^7.3.0",
+    "csstype": "^3.1.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.4.0",
+    "react-dom": "^18.2.0",
+    "react-responsive": "^9.0.0-beta.10",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-social-icons": "^5.14.0",
+    "react-transition-group": "^4.4.4",
+    "typescript": "^4.7.4",
+    "web-vitals": "^2.1.4",
+    "yarn": "^1.22.19"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "concurrently \"react-scripts start\" \"cd studio && yarn \"start\"\""
   },
   "eslintConfig": {
     "extends": [
@@ -45,7 +57,8 @@
     ]
   },
   "devDependencies": {
-    "prettier": "^2.2.1"
+    "@spotify/prettier-config": "^14.0.2",
+    "prettier": "^2.7.1"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {
