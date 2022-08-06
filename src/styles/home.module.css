@@ -5,13 +5,23 @@
   width: 100vw;
   position: absolute;
 }
-
-
 .titleBox {
   display: block;
   height: 50vh;
   width: 50vw;
   padding-top: 60px;
+}
+.projects {
+  padding-top: 9rem;
+  align-items: stretch;
+}
+
+.box {
+  margin: auto;
+  width: 80%;
+}
+.projectCard {
+  height: 100%;
 }
 
 @media only screen and (max-width: 570px) {
@@ -27,45 +37,6 @@
     -khtml-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
-
-  .dropDownMenuContainer {
-    top: 80px;
-    position: relative;
-    padding: 12px;
-  }
-
-  .dropDownMenu select {
-    background-color: white;
-    padding: 3px;
-    font-weight: bold;
-    color: #0072b1;
-    border-radius: 0.3rem;
-  }
-
-  .dropDownMenu select option {
-    background-color: white;
-    padding: 2px;
-    font-weight: bold;
-    color: #0072b1;
-  }
-
-  .selectedProjectContainer {
-    padding-top: 40px;
-  }
-
-  .projects {
-    display: none;
-  }
-
-  .projectType {
-    font-weight: 100;
-  }
-  .projectsInfo {
-    font-size: 14px;
-    font-family: "Rokkitt", serif;
-    text-decoration-color: black;
-    font-weight: 500;
   }
 
   .aboutPicture {
@@ -87,41 +58,6 @@
 }
 
 @media only screen and (min-width: 571px) {
-  .title {
-    font-family: "Rokkitt", serif;
-    font-size: 110px;
-    color: white;
-    margin-left: 15%;
-    padding-top: 50px;
-    font-weight: 500;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-
-  .dropDownMenuContainer {
-    display: none;
-  }
-  .projects {
-    padding-top: 9rem;
-  }
-
-  .projectsGrid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.5rem;
-    padding: -20px;
-  }
-
-  .projectsInfo {
-    font-size: 16px;
-    font-family: "Rokkitt", serif;
-    text-decoration-color: black;
-    font-weight: 500;
-  }
-
   .aboutPicture {
     position: relative;
     display: inline-block;
@@ -140,19 +76,6 @@
 }
 
 @media only screen and (min-width: 850px) {
-  .projectsGrid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 4rem;
-  }
-
-  .projectsInfo {
-    font-size: 16px;
-    font-family: "Rokkitt", serif;
-    font-weight: 500;
-    text-decoration-color: black;
-  }
-
   .aboutPicture {
     position: relative;
     display: inline-block;
