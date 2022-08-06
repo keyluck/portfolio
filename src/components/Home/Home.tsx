@@ -4,7 +4,7 @@ import { backgroundImage } from "../../lib/util";
 
 export const Home = () => {
   const logoStyle = backgroundImage();
-  console.log(logoStyle);
+
   return (
     <main className={styles.background}>
       <div style={logoStyle} />

@@ -58,6 +58,20 @@
 }
 
 @media only screen and (min-width: 571px) {
+  .title {
+    font-family: "Rokkitt", serif;
+    font-size: 110px;
+    color: white;
+    margin-left: 15%;
+    padding-top: 50px;
+    font-weight: 500;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
   .aboutPicture {
     position: relative;
     display: inline-block;
