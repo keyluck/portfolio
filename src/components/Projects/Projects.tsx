@@ -4,28 +4,21 @@ import sanityClient from "../../client";
 import styles from "../../styles/home.module.css";
 import { backgroundImage } from "../../lib/util";
 import { Project } from "../../lib/types";
-import { DropDownMenu } from "../DropDownMenu/DropDownMenu";
 import { ProjectCard } from "./ProjectCard";
+import { Box, Grid } from "@mui/material";
 
 export const Projects = () => {
   const logoStyle: React.CSSProperties = {
     ...backgroundImage(),
     opacity: "0.5",
   };
+  const { box, projects } = styles;
   const [loading, setLoading] = useState(true);
   const [projectData, setProjectData] = useState<Project[]>([]);
   const [selectedProject, setSelectedProject] = useState<Project>();
 
   const selectProject = (project: Project) => {
     setSelectedProject(project);
-  };
-
-  const dropDownMenuProps = {
-    styles,
-    loading,
-    projectData,
-    selectedProject,
-    setSelectedProject: selectProject,
   };
 
   useEffect(() => {
@@ -56,22 +49,22 @@ export const Projects = () => {
   return (
     <main className={styles.background}>
       <div style={logoStyle} />
-
-      {/* Container for Drop Down menu for mobile devices*/}
-      <DropDownMenu {...dropDownMenuProps} />
-      {/* End of container for drop down menu */}
-
-      {/* Begin of container for project grid for larger screens */}
-      <div className={styles.projects}>
-        <section className="container mx-auto ">
-          <section className={styles.projectsGrid}>
-            {projectData &&
-              projectData.map((project, index) => (
-                <ProjectCard {...{ ...project, key: index }} />
-              ))}
-          </section>
-        </section>
-      </div>
+      <Box className={box}>
+        <Grid
+          container
+          className={projects}
+          spacing={4}
+          columns={12}
+          alignItems="stretch"
+        >
+          {projectData &&
+            projectData.map((project, index) => (
+              <Grid item key={index} sm={12} md={6} lg={4} xl={3}>
+                <ProjectCard {...project} />
+              </Grid>
+            ))}
+        </Grid>
+      </Box>
     </main>
   );
 };

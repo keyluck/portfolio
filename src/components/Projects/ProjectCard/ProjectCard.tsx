@@ -9,23 +9,25 @@ import {
 } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { Project } from "../../../lib/types";
+import styles from "../../../styles/home.module.css";
 
-type ProjectCardType = Project & {
-  key: number;
-};
+type ProjectCardType = Project;
 
 export const ProjectCard = (props: ProjectCardType) => {
-  const { title, projectType, description, linkCode, key } = props;
+  const { title, projectType, description, linkCode } = props;
+  const { projectCard } = styles;
+
   return (
-    <Card>
+    <Card className={projectCard}>
       <CardHeader
         action={
           <Tooltip title="View GitHub Repository" placement="top-end">
-            <IconButton size="large" aria-label="github-repository">
-              <GitHubIcon
-                fontSize="large"
-                onClick={() => window.open(linkCode, "_blank")}
-              />
+            <IconButton
+              size="large"
+              aria-label="github-repository"
+              onClick={() => window.open(linkCode, "_blank")}
+            >
+              <GitHubIcon fontSize="large" />
             </IconButton>
           </Tooltip>
         }

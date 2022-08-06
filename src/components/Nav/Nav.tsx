@@ -1,7 +1,6 @@
 import React from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import NavItem from "react-bootstrap/NavItem";
+import { Nav, Navbar, NavItem } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 import { SocialIcons } from "../SocialIcons";
 import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
@@ -10,26 +9,26 @@ export const Navigation = () => {
   return (
     <Navbar fixed="top" bg="dark" variant="dark">
       <Container style={{ paddingLeft: "82px" }}>
-        <Nav className="mx-auto pl-2">
+        <Nav defaultActiveKey="/" className="mx-auto pl-2">
           <NavItem>
             {" "}
-            <Link className="nav-link" to="/">
+            <NavLink className="nav-link" to="/">
               Home
-            </Link>{" "}
+            </NavLink>{" "}
           </NavItem>
           <NavItem>
             {" "}
-            <Link className="nav-link" to="/projects">
+            <NavLink className="nav-link" to="/projects">
               {" "}
               Projects
-            </Link>{" "}
+            </NavLink>{" "}
           </NavItem>
           <NavItem>
             {" "}
-            <Link className="nav-link" to="/about">
+            <NavLink className="nav-link" to="/about">
               {" "}
               About
-            </Link>{" "}
+            </NavLink>{" "}
           </NavItem>
         </Nav>
         <SocialIcons />

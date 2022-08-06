@@ -3,9 +3,9 @@
 }
 
 .navLinkItem:hover {
-  color: rgb(25, 141, 135);
+  color: rgb(0, 197, 187);
 }
 
 .navLinkItem:active {
-  color: rgb(25, 141, 135);
+  color: rgb(0, 197, 187);
 }
