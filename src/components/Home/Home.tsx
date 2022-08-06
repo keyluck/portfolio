@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "../styles/home.module.css";
-import { backgroundImage } from '../lib/util';
+import styles from "../../styles/home.module.css";
+import { backgroundImage } from "../../lib/util";
 
-
-export default function Home() {
+export const Home = () => {
   const logoStyle = backgroundImage();
+  console.log(logoStyle);
   return (
     <main className={styles.background}>
       <div style={logoStyle} />
@@ -13,4 +13,4 @@ export default function Home() {
       </div>
     </main>
   );
-}
+};
