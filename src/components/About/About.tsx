@@ -1,11 +1,10 @@
 import React from "react";
-import styles from "../styles/home.module.css";
-import { img } from "../img";
-import { backgroundImage } from '../lib/util';
+import styles from "../../styles/home.module.css";
+import { img } from "../../img";
+import { backgroundImage } from "../../lib/util";
 
-export default function About() {
-  const logoStyle = {...backgroundImage(), 'opacity': '0.5'};
-
+export const About = () => {
+  const logoStyle = { ...backgroundImage(), opacity: "0.5" };
 
   return (
     <main className={styles.background}>
@@ -13,7 +12,11 @@ export default function About() {
       <div>
         <section className="container mx-auto pt-36">
           <section className="grid  sm:grid-col-1 md:grid-cols-2 gap-8 ">
-            <img src={img.default as string} className={styles.aboutPicture} alt="Nick" />
+            <img
+              src={img.default as string}
+              className={styles.aboutPicture}
+              alt="Nick"
+            />
 
             <div className="relative bg-white p-4 shadow-2xl rounded-lg opacity-85">
               <p className={styles.aboutText}>Hi there! I'm Nick Luckey!</p>
@@ -30,4 +33,4 @@ export default function About() {
       </div>
     </main>
   );
-}
+};

@@ -1,15 +1,15 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import { Navigation } from "./components/Nav";
+import { Home } from "./components/Home";
+import { About } from "./components/About";
+import { Projects } from "./components/Projects";
+import { Nav } from "./components/Nav";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
-      <Navigation />
+      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route element={<Projects />} path="/projects" />
@@ -17,6 +17,6 @@ function App() {
       </Routes>
     </BrowserRouter>
   );
-}
+};
 
 export default App;

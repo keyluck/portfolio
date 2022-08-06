@@ -1,5 +1,6 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
+import Container from "react-bootstrap/Container";
 
 export const SocialIcons = () => {
   return (
@@ -15,7 +16,8 @@ export const SocialIcons = () => {
         url="https://github.com/keyluck"
         className="ml-2"
         target="_blank"
-        fgColor="#fff"
+        fgColor="#000"
+        bgColor="#fff"
         style={{ height: 35, width: 35 }}
       />
     </>
