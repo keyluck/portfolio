@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { Project } from "../../../lib/types";
-import styles from "../../../styles/home.module.css";
+import styles from "../../../styles/styles.module.css";
 
 type ProjectCardType = Project;
 

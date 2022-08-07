@@ -1,25 +1,14 @@
 import React, { useState, useEffect } from "react";
 import sanityClient from "../../client";
-
-import styles from "../../styles/home.module.css";
-import { backgroundImage } from "../../lib/util";
+import styles from "../../styles/styles.module.css";
 import { Project } from "../../lib/types";
 import { ProjectCard } from "./ProjectCard";
 import { Box, Grid } from "@mui/material";
 
 export const Projects = () => {
-  const logoStyle: React.CSSProperties = {
-    ...backgroundImage(),
-    opacity: "0.5",
-  };
   const { box, projects } = styles;
   const [loading, setLoading] = useState(true);
   const [projectData, setProjectData] = useState<Project[]>([]);
-  const [selectedProject, setSelectedProject] = useState<Project>();
-
-  const selectProject = (project: Project) => {
-    setSelectedProject(project);
-  };
 
   useEffect(() => {
     sanityClient
@@ -48,7 +37,6 @@ export const Projects = () => {
 
   return (
     <main className={styles.background}>
-      <div style={logoStyle} />
       <Box className={box}>
         <Grid
           container
