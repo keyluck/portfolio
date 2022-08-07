@@ -1,21 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Rokkitt&display=swap");
 
-.background {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-}
 .titleBox {
   display: block;
   height: 50vh;
   width: 50vw;
   padding-top: 60px;
 }
+.navbar {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.navItems {
+  margin-left: auto;
+}
+.navIcons {
+  padding: 0px;
+  min-width: 92px;
+  margin-left: auto;
+  padding-right: 12px;
+}
 .projects {
   padding-top: 9rem;
   align-items: stretch;
 }
-
 .box {
   margin: auto;
   width: 80%;
@@ -27,7 +36,7 @@
 @media only screen and (max-width: 570px) {
   .title {
     font-family: "Rokkitt", serif;
-    font-size: 50px;
+    font-size: 4rem;
     color: white;
     margin-left: 20%;
     padding-top: 50px;
@@ -60,7 +69,7 @@
 @media only screen and (min-width: 571px) {
   .title {
     font-family: "Rokkitt", serif;
-    font-size: 110px;
+    font-size: 8rem;
     color: white;
     margin-left: 15%;
     padding-top: 50px;

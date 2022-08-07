@@ -1,13 +1,9 @@
 import React from "react";
-import styles from "../../styles/home.module.css";
-import { backgroundImage } from "../../lib/util";
+import styles from "../../styles/styles.module.css";
 
 export const Home = () => {
-  const logoStyle = backgroundImage();
-
   return (
     <main className={styles.background}>
-      <div style={logoStyle} />
       <div className={styles.titleBox}>
         <section className={styles.title}>Welcome.</section>
       </div>
