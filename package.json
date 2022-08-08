@@ -41,6 +41,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "audit:fix": "npx yarn-audit-fix",
     "dev": "concurrently \"yarn start\" \"cd studio && yarn \"start\"\""
   },
   "eslintConfig": {
@@ -78,7 +79,8 @@
     "@types/node": "^18.6.2",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "yarn-audit-fix": "^9.3.3"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {
