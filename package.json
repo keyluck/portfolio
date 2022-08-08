@@ -12,6 +12,7 @@
     "@mui/material": "^5.9.2",
     "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/client": "^3.3.3",
+    "@sanity/core": "^2.30.3",
     "@sanity/image-url": "^1.0.1",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -40,7 +41,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "concurrently \"react-scripts start\" \"cd studio && yarn \"start\"\""
+    "dev": "concurrently \"yarn start\" \"cd studio && yarn \"start\"\""
   },
   "eslintConfig": {
     "extends": [
@@ -59,6 +60,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "resolutions": {
+    "async": "^3.2.2",
+    "json-schema": "^0.4.0",
+    "is-svg": "^4.3.0",
+    "glob-parent": "^5.1.2",
+    "nth-check": "^2.0.1",
+    "y18n": "^3.2.2"
   },
   "devDependencies": {
     "@spotify/prettier-config": "^14.0.2",
