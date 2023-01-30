@@ -2342,10 +2342,10 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@spotify/prettier-config@^14.0.2":
-  version "14.0.2"
-  resolved "https://registry.yarnpkg.com/@spotify/prettier-config/-/prettier-config-14.0.2.tgz#fa301a7f4d54ac84c58fd9c16800176ae5a4c175"
-  integrity sha512-JJSlO/wlz7WsCiqtYPlpniFjpSszXFaV8SsG4YEJebNU543BXyL2ngtKluZZVGsYnz+hFvWXBG9ufu3/BC2P/A==
+"@spotify/prettier-config@^14.1.5":
+  version "14.1.5"
+  resolved "https://registry.yarnpkg.com/@spotify/prettier-config/-/prettier-config-14.1.5.tgz#fc281797af1b854bc448b73ae40f67a7a52b187a"
+  integrity sha512-GpxiaCzMBMu44ckWFrECtVMNWoqUrkskgGNwpgXa65NdQwNZc9846xixCtHccqfxD47+MKzJn4qOWUpzwsZvBQ==
 
 "@surma/rollup-plugin-off-main-thread@^2.2.3":
   version "2.2.3"
